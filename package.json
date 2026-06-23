@@ -1,0 +1,23 @@
+{
+  "name": "online-classroom-signaling-server",
+  "version": "1.0.0",
+  "description": "سرور سیگنالینگ WebRTC برای افزونه‌ی وردپرس Online Classroom. وظیفه‌ی این سرور فقط رد و بدل کردن پیام‌های Offer/Answer/ICE و چت متنی بین مرورگرهاست؛ هیچ رسانه‌ی صوتی/تصویری از این سرور عبور نمی‌کند (اتصال واقعی WebRTC مستقیماً Peer-to-Peer است).",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.8.3"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
